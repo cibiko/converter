@@ -52,7 +52,7 @@ async function getCurrencies () {
 input.oninput = convertValue;
 select.oninput = convertValue;
 
-//Функция конвертации
+//Функция конвертации:>
 function convertValue (){
     result.value = (parseFloat(input.value) / rates[select.value].Value).toFixed(2);
 }
